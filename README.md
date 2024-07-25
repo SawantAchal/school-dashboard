@@ -1,40 +1,85 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# School Management Dashboard
 
-## Getting Started
+This project is a School Management Dashboard built using Next.js, React, MySQL, and Tailwind CSS. The dashboard allows users to add and view school information. It includes responsive design for both desktop and mobile views.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- *Add School*: A form to add school details including name, address, city, state, contact, email, and image.
+- *Show Schools*: A page to display a list of schools with their details.
+- *Responsive Design*: Adapts to both mobile and desktop screens.
+- *File Upload*: Upload and store school images.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Technologies Used
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+- *Next.js*: A React framework for server-side rendering.
+- *React*: A JavaScript library for building user interfaces.
+- *MySQL*: A relational database management system.
+- *Tailwind CSS*: A utility-first CSS framework.
+- *Multer*: Middleware for handling file uploads.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Installation
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+1. *Clone the Repository*
+    bash
+    git clone https://github.com/SawantAchal/internshala-school-project-with-next.git
+    cd school-management-dashboard
+    
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+2. *Install Dependencies*
+    bash
+    npm install
+    
 
-## Learn More
+3. *Set Up MySQL Database*
+    - Create a database named school_db.
+    - Create a table named schools with the following schema:
+        sql
+        CREATE TABLE schools (
+            id INT AUTO_INCREMENT PRIMARY KEY,
+            name TEXT,
+            address TEXT,
+            city TEXT,
+            state TEXT,
+            contact VARCHAR(15),
+            image TEXT,
+            email_id TEXT
+        );
+        
 
-To learn more about Next.js, take a look at the following resources:
+4. *Configure Environment Variables*
+    - Create a .env.local file in the root directory and add your MySQL database credentials:
+        
+        DB_HOST=your_mysql_host
+        DB_USER=your_mysql_user
+        DB_PASSWORD=your_mysql_password
+        DB_NAME=school_db
+        
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+5. *Run the Development Server*
+    bash
+    npm run dev
+    
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+6. *Access the Application*
+    Open your browser and go to http://localhost:3000.
+## Usage
 
-## Deploy on Vercel
+### Adding a School
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Navigate to the "Add School" tab.
+2. Fill out the form with the school's information.
+3. Upload an image of the school.
+4. Click the "Add School" button. The form will be cleared upon successful submission.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Viewing Schools
+
+1. Navigate to the "Show Schools" tab.
+2. View the list of schools with their details.
+
+## Deployment
+
+To deploy the project, follow the instructions on [Vercel](https://school-project-jet-ten.vercel.app/) or any other hosting platform of your choice.
+
+## Contributing
+
+Feel free to fork the repository and submit pull requests. For major changes, please open an issue first to discuss what you would like to change.

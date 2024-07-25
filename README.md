@@ -24,15 +24,20 @@ See live - https://school-dashboard-tau-three.vercel.app/
    
     bash
     ```git clone https://github.com/SawantAchal/school-dashboard.git```
+
+2*Navigate to the project directory*
+
+   bash
+   ```cd school-dashboard```
       
 
-2. *Install Dependencies*
+3. *Install Dependencies*
 
     bash
     ```npm install```
     
 
-3. *Set Up MySQL Database*
+4. *Set Up MySQL Database*
    
     - Create a database named school_db.
     - Create a table named schools with the following schema:
@@ -49,7 +54,7 @@ See live - https://school-dashboard-tau-three.vercel.app/
         );
         
 
-4. *Configure Environment Variables*
+5. *Configure Environment Variables*
     - Create a .env.local file in the root directory and add your MySQL database credentials:
         
         DB_HOST=your_mysql_host
@@ -58,13 +63,13 @@ See live - https://school-dashboard-tau-three.vercel.app/
         DB_NAME=school_db
         
 
-5. *Run the Development Server*
+6. *Run the Development Server*
 
     bash
     ```npm run dev```
     
 
-6. *Access the Application*
+7. *Access the Application*
    
     Open your browser and go to http://localhost:3000.
    

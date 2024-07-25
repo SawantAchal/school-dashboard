@@ -2,6 +2,7 @@
 
 This project is a School Management Dashboard built using Next.js, React, MySQL, and Tailwind CSS. The dashboard allows users to add and view school information. It includes responsive design for both desktop and mobile views.
 
+See live - https://school-dashboard-tau-three.vercel.app/
 ## Features
 
 - *Add School*: A form to add school details including name, address, city, state, contact, email, and image.

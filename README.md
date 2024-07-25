@@ -20,14 +20,17 @@ This project is a School Management Dashboard built using Next.js, React, MySQL,
 ## Installation
 
 1. *Clone the Repository*
+   
     bash
     ```git clone https://github.com/SawantAchal/internshala-school-project-with-next.git```
    
 2. *Navigate to the project directory*
+
     cd school-management-dashboard
     
 
 3. *Install Dependencies*
+
     bash
     ```npm install```
     
@@ -59,11 +62,13 @@ This project is a School Management Dashboard built using Next.js, React, MySQL,
         
 
 6. *Run the Development Server*
+
     bash
     ```npm run dev```
     
 
-9. *Access the Application*
+7. *Access the Application*
+   
     Open your browser and go to http://localhost:3000.
    
 ## Usage

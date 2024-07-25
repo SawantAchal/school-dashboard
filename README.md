@@ -22,20 +22,16 @@ This project is a School Management Dashboard built using Next.js, React, MySQL,
 1. *Clone the Repository*
    
     bash
-    ```git clone https://github.com/SawantAchal/internshala-school-project-with-next.git```
-   
-2. *Navigate to the project directory*
+    ```git clone https://github.com/SawantAchal/school-dashboard.git```
+      
 
-    ```cd school-management-dashboard```
-    
-
-3. *Install Dependencies*
+2. *Install Dependencies*
 
     bash
     ```npm install```
     
 
-4. *Set Up MySQL Database*
+3. *Set Up MySQL Database*
    
     - Create a database named school_db.
     - Create a table named schools with the following schema:
@@ -52,7 +48,7 @@ This project is a School Management Dashboard built using Next.js, React, MySQL,
         );
         
 
-5. *Configure Environment Variables*
+4. *Configure Environment Variables*
     - Create a .env.local file in the root directory and add your MySQL database credentials:
         
         DB_HOST=your_mysql_host
@@ -61,13 +57,13 @@ This project is a School Management Dashboard built using Next.js, React, MySQL,
         DB_NAME=school_db
         
 
-6. *Run the Development Server*
+5. *Run the Development Server*
 
     bash
     ```npm run dev```
     
 
-7. *Access the Application*
+6. *Access the Application*
    
     Open your browser and go to http://localhost:3000.
    

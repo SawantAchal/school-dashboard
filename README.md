@@ -26,7 +26,7 @@ This project is a School Management Dashboard built using Next.js, React, MySQL,
    
 2. *Navigate to the project directory*
 
-    cd school-management-dashboard
+    ```cd school-management-dashboard```
     
 
 3. *Install Dependencies*
